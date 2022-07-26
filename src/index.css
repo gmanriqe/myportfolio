@@ -1,13 +1,341 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue-color: #0070f3;
+  --black-color: #000;
+  --white-color: #fff;
+  --icon-plus: #faff00;
+  --icon-message-travel: #d56e0c;
+  --control-form-color: #d9d9d9;
+  --error-message-form-color: #ff0000;
+  --body-color: #fdfdfd;
+  --link-content: " ↗";
+
+  --text-font-family: "Lato", sans-serif;
+  --title-font-family: "Montserrat", sans-serif;
+  --button-font-family: "Roboto Slab", sans-serif;
+
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1536px;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  background-color: var(--body-color);
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: inherit;
+  line-height: 21px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/**********************
+  * Titles
+  **********************/
+h1 {
+  font-size: 3rem; /* 48px */
+  line-height: 1;
+}
+
+h2 {
+  font-size: 60px; /* 36px */
+  line-height: 68px; /* 40px */
+}
+
+h3 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+h5 {
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.75rem; /* 28px */
+}
+
+h6 {
+  font-size: 13px; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.h1 {
+  font-size: 42px;
+  line-height: 58px;
+}
+.h6 {
+  font-size: 34px; /* 16px */
+  line-height: 41px;
+}
+
+h1,
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 640px) {
+  .h1 {
+    font-size: 96px; /* 48px */
+    line-height: 117px;
+  }
+}
+
+/**********************
+* Styles
+**********************/
+/* Button */
+.btn {
+  font-family: var(--button-font-family);
+  display: block;
+  min-width: 172px;
+  text-align: center;
+  border: 2px solid var(--black-color);
+  padding: 15px 32px;
+  box-shadow: 4px 5px 0px rgba(0, 0, 0, 0.53);
+}
+.btn.btn-small {
+  height: 37px;
+  padding: 8px 16px;
+  min-width: 143px;
+}
+.btn.btn-primary {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+/* Icon Plus */
+.plus-signal {
+  color: var(--icon-plus);
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Title */
+.my-only-title {
+  max-width: 847px;
+  margin: 0 auto;
+}
+.my-only-title p {
+  font-family: var(--text-font-family);
+  font-size: 18px;
+  line-height: 16px;
+  text-align: right;
+}
+@media screen and (min-width: 640px) {
+  .my-only-title p {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+
+/* Title width + */
+.title-icon {
+  font-size: 32px;
+  line-height: 36px;
+  padding-left: 24px;
+  position: relative;
+}
+.title-icon .plus-signal {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.title-icon em {
+  display: block;
+  font-style: normal;
+  position: relative;
+  z-index: 2;
+}
+.title-icon .title-icon__box {
+  position: relative;
+}
+.title-icon .title-icon__box .split {
+  background-color: var(--icon-plus);
+  display: inline-block;
+  width: 66px;
+  height: 6px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 640px) {
+  .title-icon {
+    font-size: 60px;
+    line-height: 68px;
+    padding-left: 46px;
+  }
+  .title-icon .title-icon__box .split {
+    width: 126px;
+    height: 12px;
+  }
+}
+
+/* Card */
+.card-skills {
+  margin: 0 auto;
+  max-width: 274px;
+  border: 2px solid var(--black-color);
+}
+.card-skills .card-skills__header {
+  background-color: var(--black-color);
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-skills .card-skills__header h6 {
+  color: var(--white-color);
+  text-align: center;
+}
+.card-skills .card-skills__body {
+  padding: 27px 15px;
+}
+
+/* Card Experience */
+.card-experience {
+  background-color: var(--black-color);
+  padding: 15px;
+  color: var(--white-color);
+}
+.card-experience h6 {
+  color: var(--icon-plus);
+  font-family: var(--button-font-family);
+  font-weight: 400;
+}
+.card-experience h6 em {
+  color: var(--white-color);
+  font-style: normal;
+}
+.card-experience p {
+  font-family: var(--button-font-family);
+  font-size: 19px;
+}
+.card-experience span {
+  display: block;
+  margin-top: 16px;
+}
+
+/* Typing Free */
+.typing-free p {
+  margin-bottom: 12px;
+}
+.typing-free ul {
+  margin-bottom: 12px;
+}
+.typing-free ul li {
+  padding-left: 20px;
+  position: relative;
+}
+.typing-free ul li::before {
+  content: "";
+  background-color: var(--black-color);
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+/* Header */
+.header .header__navegation {
+  display: flex;
+}
+.header .header__navegation li a {
+  font-size: 18px;
+  padding-left: 17px;
+  position: relative;
+}
+.header .header__navegation li a::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--black-color);
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .header__navegation li:not(:last-child) {
+  margin-right: 25px;
+}
+.header .header__logo {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family: var(--button-font-family);
+  font-size: 24px;
+  padding: 10px;
+}
+.header .header__content {
+  height: 70px;
+}
+.header .header__navegation li a.active::before {
+  background-color: var(--icon-plus);
+}
+
+/*  */
+.typing-free .list-inline-icon {
+  display: flex;
+}
+.typing-free .list-inline-icon li {
+  padding-left: 0;
+  font-size: 32px;
+}
+.typing-free .list-inline-icon li:not(:last-child) {
+  margin-right: 12px;
+}
+.typing-free .list-inline-icon li::before {
+  content: none;
+}
+
+/* Contact me */
+.contact-me i {
+  right: 7px;
+  transition: all 0.2s ease-in-out;
+}
+.contact-me:hover i {
+  right: 0;
+}
+
+/* Main */
+.main {
+  min-height: calc(100vh - 70px - 82px);
+}
+
+/* Home */
+.home {
+  height: calc(100vh - 70px);
+}
+
+/* Footer */
+.technologys a::after {
+  content: var(--link-content);
 }
