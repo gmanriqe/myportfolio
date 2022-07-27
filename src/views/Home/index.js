@@ -1,5 +1,5 @@
 // 1ero: Paquetes de terceros
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link} from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import KBarMenu from "../../components/Kbar";

@@ -8,7 +8,7 @@ const App = () => {
     const actions = [
         {
             id: 'home',
-            name: 'Página de inicio',
+            name: 'Inicio',
             shortcut: ["h"],
             icon: '',
             perform: () => (navegation("/")),
@@ -32,7 +32,7 @@ const App = () => {
         },
         {
             id: 'portfolio',
-            name: 'Portafolio de trabajo',
+            name: 'Portafolio',
             shortcut: ["p"],
             icon: '',
             perform: () => (navegation("/portafolio")),
@@ -48,7 +48,7 @@ const App = () => {
         },
         {
             id: "contact",
-            name: "Ponte en contacto",
+            name: "Contáctame",
             shortcut: ["c"],
             keywords: "email",
             icon: '',
