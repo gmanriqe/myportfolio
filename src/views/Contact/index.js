@@ -1,9 +1,10 @@
 // 1ero: Paquetes de terceros
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Footer } from '../../components/Footer';
+import KBarMenu from "../../components/Kbar";
 // 2do: Paquetes de mi propio proyecto
 import { Header } from '../../components/Header'
+import { Footer } from '../../components/Footer';
 
 const Contact = () => {
     const location = useLocation();
@@ -14,6 +15,7 @@ const Contact = () => {
 
     return (
         <>
+            <KBarMenu></KBarMenu>
             <Header pathname={location} />
             <main className='main main-contact'>
                 <div className='max-w-4xl mx-auto px-4'>

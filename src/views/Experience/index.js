@@ -1,6 +1,7 @@
 // 1ero: Paquetes de terceros
 import { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
+import KBarMenu from "../../components/Kbar";
 // 2do: Paquetes de mi propio proyecto
 import { Experience as experience } from '../../mock/Experience';
 import { Header } from '../../components/Header';
@@ -12,8 +13,10 @@ const Experience = () => {
     useEffect(() => {
         document.title = 'Experiencia | GManriqe';
     });
+    
     return (
         <>
+            <KBarMenu></KBarMenu>
             <Header pathname={location}/>
             <main className='main main-experience'>
                 <div className='max-w-screen-lg mx-auto px-4'>

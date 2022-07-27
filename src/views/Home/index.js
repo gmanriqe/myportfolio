@@ -1,7 +1,8 @@
 // 1ero: Paquetes de terceros
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link} from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import KBarMenu from "../../components/Kbar";
 // 2do: Paquetes de mi propio proyecto
 import { Header } from "../../components/Header";
 
@@ -9,11 +10,12 @@ const Home = () => {
     const location = useLocation();
 
     useEffect(() => {
-        document.title = 'Inicio | GManriqe';
+        document.title = 'Jesús Alexander | Ingeniero Informático. Frontend Developer.';
     });
 
     return (
         <>
+            <KBarMenu></KBarMenu>
             <Header pathname={location} />
             <main className='main main-home'>
                 <div className='max-w-screen-lg mx-auto px-4'>

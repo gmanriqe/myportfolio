@@ -110,6 +110,20 @@ h6,
 /**********************
 * Styles
 **********************/
+/* Menu Hamburguer */
+.close-button {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px;
+}
+
+.close-button span {
+  background-color: var(--black-color);
+}
+
 /* Button */
 .btn {
   font-family: var(--button-font-family);
@@ -266,7 +280,7 @@ h6,
 
 /* Header */
 .header .header__navegation {
-  display: flex;
+  display: none;
 }
 .header .header__navegation li a {
   font-size: 18px;
@@ -299,6 +313,11 @@ h6,
 }
 .header .header__navegation li a.active::before {
   background-color: var(--icon-plus);
+}
+@media screen and (min-width: 640px) {
+  .header .header__navegation {
+    display: flex;
+  }
 }
 
 /*  */
@@ -338,4 +357,14 @@ h6,
 /* Footer */
 .technologys a::after {
   content: var(--link-content);
+}
+
+/* Kbar */
+.kbar__animator {
+  opacity: 0;
+  transform: scale(0.99);
+  max-width: 600px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px;
+  pointer-events: auto;
 }

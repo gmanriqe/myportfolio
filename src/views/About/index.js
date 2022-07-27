@@ -1,6 +1,7 @@
+// 1ero: Paquetes de terceros
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
+import KBarMenu from "../../components/Kbar";
 // 2do: Paquetes de mi propio proyecto
 import { Skills } from "../../mock/Skills";
 import { Header } from "../../components/Header";
@@ -12,8 +13,10 @@ const About = () => {
     useEffect(() => {
         document.title = 'Sobre mi | GManriqe';
     });
+
     return (
         <>
+            <KBarMenu></KBarMenu>
             <Header pathname={location}/>
             <main className='main main-about'>
                 <div className='max-w-screen-lg mx-auto px-4'>
