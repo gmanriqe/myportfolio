@@ -387,6 +387,32 @@ p strong {
   content: var(--link-content);
 }
 
+/* Modal */
+.modal-photography-award .modal-window-content  {
+    max-width: 480px;
+}
+.m-title__close {
+    background-color: var(--black-color);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.m-title__close span {
+    background-color: var(--white-color);
+    display: inline-block;
+    width: 2px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+}
+.m-title__close span:nth-child(1) {
+    transform: rotate(45deg);
+}
+.m-title__close span:nth-child(2) {
+    transform: rotate(-45deg);
+}
 /* Kbar */
 .kbar__animator {
   opacity: 0;

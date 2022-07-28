@@ -1456,3 +1456,5 @@ a .icon-flip-vertical:before {
 .icon-circle-thin:before {
   content: "\f1db";
 }
+
+@import "../styles/components/modal.css";
