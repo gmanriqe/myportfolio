@@ -22,7 +22,7 @@ const Contact = () => {
             <main className='main main-contact'>
                 <div className='max-w-4xl mx-auto px-4'>
                     <section className='pt-5 sm:pt-13'>
-                        <Breadcrumb />
+                        <Breadcrumb linkMenu={location} linkName='CONTÁCTAME'/>
                         <Title title='Contáctame.' />
                         <div className='pt-5'>
                             <p>Si te interesa mi trabajo o las habilidades que tengo, puedes ponerte en contacto conmigo por cualquiera de estos medios.</p>
