@@ -1457,4 +1457,5 @@ a .icon-flip-vertical:before {
   content: "\f1db";
 }
 
+@import "../styles/components/darkMode.css";
 @import "../styles/components/modal.css";
