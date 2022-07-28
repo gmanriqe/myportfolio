@@ -23,6 +23,10 @@
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
   --breakpoint-xxl: 1536px;
+
+  --darkMode-body-color: #161618;
+  --darkMode-text-color: rgb(156, 163, 175);
+  --darkMode-card-1-color: rgb(17, 17, 19);
 }
 
 html {

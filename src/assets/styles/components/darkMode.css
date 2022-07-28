@@ -1,0 +1,17 @@
+.dark body {
+    background-color: var(--darkMode-body-color)
+}
+.dark body {
+    color: var(--darkMode-text-color)
+}
+.dark :is(h1,h2,h3),
+.dark .contact-me .text-gray-900 {
+    color: var(--white-color)
+}
+.dark .breadcrumb li:not(:last-child)::after {
+    background-color: var(--white-color)
+}
+.dark .card-skills .card-skills__header,
+.dark .contact-me.bg-gray-50 {
+    background-color: var(--darkMode-card-1-color)
+}
