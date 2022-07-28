@@ -1,0 +1,47 @@
+
+/* Modal */
+.modal-window {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+
+    transition: all 0.3s;
+}
+.modal-window.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window-content {
+    max-width: 725px;
+    width: calc(100% - 1rem);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    color: #000;
+    background-color: #ffffff;
+}
+
+.modal-close {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 32px;
+    height: 32px;
+    opacity: 0.9;
+    z-index: 100;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background: #003da4;
+    border-radius: 50%;
+}
