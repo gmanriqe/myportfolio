@@ -2,7 +2,7 @@ export const Experience = [
     {
         business: 'GECKO BTL',
         business_type: 'Agencia Digital',
-        duration: 'ENE2016 - DIC2016',
+        duration: 'ENE2017 - DIC2017',
         profile: 'Practicante Frontend'
     },
     {
@@ -12,21 +12,27 @@ export const Experience = [
         profile: 'Analista de Base de Datos'
     },
     {
-        business: 'EEUU',
-        business_type: 'Agencia Digital',
-        duration: 'AGO2018 - ENE2019',
-        profile: 'Frontend Jr'
+        business: 'CDI PROJECT',
+        business_type: '',
+        duration: 'MAY2018 - JUL2018',
+        profile: 'Frontend JR'
     },
     {
-        business: 'DEV MASTER',
-        business_type: 'C.E.T.',
-        duration: 'ENE2018 - ACT.',
+        business: 'CULTURA INTERACTIVA',
+        business_type: 'EEUU',
+        duration: 'OCT2018 - MAR2018',
+        profile: 'Frontend JR'
+    },
+    {
+        business: 'DEVMASTER',
+        business_type: 'A.P.I.',
+        duration: 'JUN2019 - ACT.',
         profile: 'Docente Frontend'
     },
     {
         business: 'LA AGENCIA®',
         business_type: 'Agencia Digital',
-        duration: 'DIC2019 - DIC2020',
+        duration: 'NOV2019 - DIC2020',
         profile: 'Frontend Developer'
     },
     {

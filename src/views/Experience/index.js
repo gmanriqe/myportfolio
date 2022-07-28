@@ -2,10 +2,12 @@
 import { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import KBarMenu from "../../components/Kbar";
+import Breadcrumb from '../../components/Breadcrumb';
 // 2do: Paquetes de mi propio proyecto
 import { Experience as experience } from '../../mock/Experience';
 import { Header } from '../../components/Header';
 import { Footer } from "../../components/Footer";
+import Title from "../../components/Title";
 
 const Experience = () => {
     const location = useLocation();
@@ -13,22 +15,17 @@ const Experience = () => {
     useEffect(() => {
         document.title = 'Experiencia | GManriqe';
     });
-    
+
     return (
         <>
             <KBarMenu></KBarMenu>
-            <Header pathname={location}/>
+            <Header pathname={location} />
             <main className='main main-experience'>
-                <div className='max-w-screen-lg mx-auto px-4'>
-                    <section className='pt-13'>
-                        <h2 className='title-icon'>
-                            <span className='plus-signal'>+</span>
-                            <div className='title-icon__box'>
-                                <em>Experiencia.</em>
-                                <span className='split'></span>
-                            </div>
-                        </h2>
-                        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 pt-5 sm:pt-10'>
+                <div className='max-w-4xl mx-auto px-4'>
+                    <section className='pt-5 sm:pt-13'>
+                        <Breadcrumb />
+                        <Title title='Experiencia.' />
+                        <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 pt-5 sm:pt-10'>
                             {experience.map((item, idx) => (
                                 <div className='card-experience' key={idx}>
                                     <h6>{item.business} <em>{(item.business_type.length > 0) ? `- ${item.business_type}` : ''}</em></h6>
@@ -38,34 +35,30 @@ const Experience = () => {
                             ))}
                         </div>
                     </section>
-                    <section className='grid grid-cols-1 sm:grid-cols-2 pt-5 sm:pt-13'>
-                        <h2 className='title-icon'>
-                            <span className='plus-signal'>+</span>
-                            <div className='title-icon__box'>
-                                <em>Último</em><em>projecto.</em>
-                                <span className='split'></span>
-                            </div>
-                        </h2>
-                        <div className='typing-free pt-5 sm:pt-0'>
-                            <p>Encargado de la maquetación y funcionalidad de las vistas construidas para la nueva aplicación web que se está migrando de nombre WMS, dividiendolo en pequeños modulos y construyendolo según prioridades.</p>
-                            <p>Tecnologías que se utilizaron para desarrollar el proyecto:</p>
+                    <section className='grid grid-cols-1 lg:grid-cols-10 pt-8 sm:pt-13'>
+                        <Title title='Último proyecto.' />
+                        <div className='typing-free col-span-7 pt-5 lg:pt-0'>
+                            <p>Encargado de las propuestas de diseño, maquetación y funcionalidad de las vistas construidas para la nueva aplicación web de nombre WMS.</p>
+                            <p>Tecnologías y herramientas que se utilizaron para el desarrollo del proyecto:</p>
                             <ul>
-                                <li>HTML5 (Pug)</li>
-                                <li>CSS3 (Scss / Bootstrap 4.6)</li>
-                                <li>JAVASCRIPT (ES6 / AXIOS)</li>
-                                <li>WEBPACK</li>
-                                <li>ADOBEXD</li>
-                                <li>GIT</li>
-                                <li>TRELLO</li>
+                                <li>Html5 (Pug)</li>
+                                <li>Css3 (Bootstrap 4.6)</li>
+                                <li>Javascript (ES6)</li>
+                                <li>Webpack</li>
+                                <li>API'S con Axios</li>
+                                <li>Postman</li>
+                                <li>Git</li>
+                                <li>Trello</li>
+                                <li>Adobe xd</li>
                             </ul>
-                            <p>La aplicación con los meses iba creciendo, el cual me llevaba a una constante investigación y al uso de modulos muy usados por los desarrolladores. Mencionaré algunos utilizados:</p>
+                            <p>Modulos descargados desde npm:</p>
                             <ul>
                                 <li>ExcelJS (Reporte)</li>
-                                <li>Vanilla Datatable (Tabla incluye: buscador y paginador)</li>
+                                <li>Vanilla Datatable</li>
                                 <li>Flatpickr (UI Fecha)</li>
                                 <li>MomentJS (Formato Fecha)</li>
                                 <li>CLEditor (Editor HTML)</li>
-                                <li>Select2 (Autocompletado)</li>
+                                <li>Select2</li>
                                 <li>Algunos más..</li>
                             </ul>
                         </div>

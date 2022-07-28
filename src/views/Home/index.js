@@ -1,6 +1,6 @@
 // 1ero: Paquetes de terceros
 import React, { useEffect } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import KBarMenu from "../../components/Kbar";
 // 2do: Paquetes de mi propio proyecto
@@ -20,7 +20,7 @@ const Home = () => {
             <main className='main main-home'>
                 <div className='max-w-screen-lg mx-auto px-4'>
                     <div className='home flex flex-col justify-center items-center'>
-                        <div className='h1 my-only-title'>¡Hey! Bienvenido<p><span className='plus-signal'>+</span> Frontend Developer.</p></div>
+                        <div className='h1 my-only-title'>¡Hey! Bienvenido<p>Frontend Developer</p></div>
                         <ul className='flex flex-col sm:flex-row justify-center gap-2 sm:gap-10 mt-10 w-full'>
                             <li>
                                 <Link to='/sobre-mi' className='btn'>SOBRE MI</Link>

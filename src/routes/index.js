@@ -18,7 +18,7 @@ const RoutesComponent = () => (
         <Route path="/experiencia" element={<Experience />} />
         <Route path="/portafolio" element={<Porfolio />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/contacto" element={<Contact />} />
+        <Route path="/contactame" element={<Contact />} />
         <Route path="/page-404" element={<Page404 />} />
         <Route path="*" element={<div>404</div>} />
     </Routes>

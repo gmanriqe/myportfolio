@@ -39,6 +39,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: inherit;
   line-height: 21px;
+  font-weight: 300;
 }
 
 code {
@@ -107,21 +108,27 @@ h6,
   }
 }
 
+p strong {
+    font-weight: 400;
+}
+
 /**********************
 * Styles
 **********************/
-/* Menu Hamburguer */
-.close-button {
-  cursor: pointer;
-  width: 35px;
-  height: 35px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2px;
+/* Breadcrumb */
+.breadcrumb li:not(:last-child){
+    padding-right: 20px;
+    position: relative;
 }
-
-.close-button span {
-  background-color: var(--black-color);
+.breadcrumb li:not(:last-child)::after {
+    content: '';
+    display: inline-block;
+    background-color: var(--black-color);
+    width: 2px;
+    height: 12px;
+    position: absolute;
+    top: 1px;
+    right: 10px;
 }
 
 /* Button */
@@ -161,11 +168,23 @@ h6,
   font-size: 18px;
   line-height: 16px;
   text-align: right;
+  position: relative;
+  padding-right: 15px;
+}
+.my-only-title p::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--icon-plus);
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 @media screen and (min-width: 640px) {
   .my-only-title p {
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 28px;
   }
 }
 
@@ -173,7 +192,6 @@ h6,
 .title-icon {
   font-size: 32px;
   line-height: 36px;
-  padding-left: 24px;
   position: relative;
 }
 .title-icon .plus-signal {
@@ -187,10 +205,17 @@ h6,
   position: relative;
   z-index: 2;
 }
+.title-icon .title-icon__name {
+  display: flex;
+  flex-direction: row;
+}
+.title-icon .title-icon__name em:not(:last-child) {
+  margin-right: 6px;
+}
 .title-icon .title-icon__box {
   position: relative;
 }
-.title-icon .title-icon__box .split {
+.title-icon .title-icon__split {
   background-color: var(--icon-plus);
   display: inline-block;
   width: 66px;
@@ -199,22 +224,25 @@ h6,
   left: 0;
   bottom: 0;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
   .title-icon {
-    font-size: 60px;
-    line-height: 68px;
-    padding-left: 46px;
+    font-size: 44px;
+    line-height: 52px;
   }
-  .title-icon .title-icon__box .split {
-    width: 126px;
+  .title-icon .title-icon__split {
+    width: 95px;
     height: 12px;
+  }
+  .title-icon .title-icon__name {
+    flex-direction: column;
   }
 }
 
 /* Card */
 .card-skills {
-  margin: 0 auto;
+  width: 100%;
   max-width: 274px;
+  margin: 0 auto;
   border: 2px solid var(--black-color);
 }
 .card-skills .card-skills__header {
