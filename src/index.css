@@ -305,6 +305,9 @@ p strong {
   left: 0;
   top: 8px;
 }
+.typing-free u { 
+    cursor: pointer
+}
 
 /* Header */
 .header .header__navegation {
@@ -392,6 +395,7 @@ p strong {
     max-width: 480px;
 }
 .m-title__close {
+    cursor: pointer;
     background-color: var(--black-color);
     width: 30px;
     height: 30px;
@@ -399,19 +403,27 @@ p strong {
     right: 0;
     top: 0;
 }
-.m-title__close span {
-    background-color: var(--white-color);
-    display: inline-block;
-    width: 2px;
-    height: 30px;
-    position: absolute;
-    left: 50%;
-}
 .m-title__close span:nth-child(1) {
     transform: rotate(45deg);
 }
 .m-title__close span:nth-child(2) {
     transform: rotate(-45deg);
+}
+.m-title__close-icon {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+}
+.m-title__close-icon span {
+    background-color: var(--white-color);
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* Kbar */
 .kbar__animator {

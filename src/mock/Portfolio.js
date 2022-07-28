@@ -2,7 +2,7 @@ export const Portfolio = [
     {
         link: 'https://bootcamp-flight-offers-search-20sb0r0wb-gmanriqe.vercel.app/',
         image_URL: require('../assets/images/portfolio/bootcamp.png'),
-        marca: 'Bootcamp Proyecto Final',
+        marca: 'Bootcamp ReactJS - Proyecto Final',
         technologies: 'HTML5, CSS3 (Tailwind), REACTJS, REDUX RTK, REACT ROUTER V6, FORMIK Y FETCH'
     },
     {
