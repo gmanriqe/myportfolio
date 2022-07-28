@@ -23,7 +23,7 @@ const Experience = () => {
             <main className='main main-experience'>
                 <div className='max-w-4xl mx-auto px-4'>
                     <section className='pt-5 sm:pt-13'>
-                        <Breadcrumb />
+                        <Breadcrumb linkMenu={location} linkName='EXPERIENCIA'/>
                         <Title title='Experiencia.' />
                         <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 pt-5 sm:pt-10'>
                             {experience.map((item, idx) => (

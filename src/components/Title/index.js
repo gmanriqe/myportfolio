@@ -13,7 +13,7 @@ const Title = ({ title }) => {
     })
 
     return (
-        <h2 className='title-icon col-span-3'>
+        <h2 className='title-icon col-span-10 lg:col-span-3'>
             <div className='title-icon__box'>
                 <div className='title-icon__name' id='title' ref={elemTitle}></div>
                 <span className='title-icon__split'></span>

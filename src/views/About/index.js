@@ -25,7 +25,7 @@ const About = () => {
                     <section className='grid grid-cols-1 lg:grid-cols-10 pt-5 sm:pt-13'>
                         <Breadcrumb linkMenu={location} linkName='SOBRE MÍ'/>
                         <Title title='Sobre mí.' />
-                        <div className='typing-free col-span-7 pt-5 lg:pt-0'>
+                        <div className='typing-free col-span-10 lg:col-span-7 pt-5 lg:pt-0'>
                             <p><strong>Hola, ¿Como te vá? 👋 </strong></p>
                             <p>Soy Jesús Gonzales, bachiller en <strong>Ingeniería Informática</strong> con experiencia haciendo sitios web modernos que sean amigables e intuitivos desarrolladas con HTML5, CSS3, JAVASCRIPT(ES6), y REACTJS. Enfocado en los detalles visuales, con gran destreza en CSS y familiariazado con diferentes frameworks como: Bootstrap y Tailwind.</p>
                             <p>Aunque mis sentimientos son muy fuertes por el Frontend, cuento con conocimientos del lado Backend con NodeJS (Express), utilizando el patron MVC y manejo de Base de Datos con SQL Server.</p>
