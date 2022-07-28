@@ -52,7 +52,7 @@ const App = () => {
             shortcut: ["c"],
             keywords: "email",
             icon: '',
-            perform: () => (navegation("/contacto")),
+            perform: () => (navegation("/contactame")),
             section: 'Navegación',
         }
     ]

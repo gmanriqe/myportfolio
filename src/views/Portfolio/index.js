@@ -1,11 +1,14 @@
 // 1ero: Paquetes de terceros
 import { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
+import Breadcrumb from '../../components/Breadcrumb';
 // 2do: Paquetes de mi propio proyecto
 import { Header } from "../../components/Header";
 import { Footer } from '../../components/Footer';
-import KBarMenu from "../../components/Kbar";
 import { Portfolio as portfolio } from '../../mock/Portfolio';
+import KBarMenu from "../../components/Kbar";
+import Title from '../../components/Title';
+
 const Portfolio = () => {
     const location = useLocation();
 
@@ -18,16 +21,11 @@ const Portfolio = () => {
             <KBarMenu></KBarMenu>
             <Header pathname={location} />
             <main className='main main-portfolio'>
-                <div className='max-w-screen-lg mx-auto px-4'>
-                    <section className='pt-13'>
-                        <h2 className='title-icon'>
-                            <span className='plus-signal'>+</span>
-                            <div className='title-icon__box'>
-                                Portafolio.
-                                <span className='split'></span>
-                            </div>
-                        </h2>
-                        <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 mt-10'>
+                <div className='max-w-4xl mx-auto px-4'>
+                    <section className='pt-5 sm:pt-13'>
+                        <Breadcrumb />
+                        <Title title='Portafolio.' />
+                        <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 pt-5 sm:pt-10'>
                             {
                                 portfolio.map((item, idx) => (
                                     <a key={idx} href={item.link} target='_blank' title={item.title} rel="noreferrer">

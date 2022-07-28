@@ -2,9 +2,11 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import KBarMenu from "../../components/Kbar";
+import Breadcrumb from '../../components/Breadcrumb';
 // 2do: Paquetes de mi propio proyecto
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer';
+import Title from '../../components/Title';
 
 const Contact = () => {
     const location = useLocation();
@@ -20,15 +22,10 @@ const Contact = () => {
             <main className='main main-contact'>
                 <div className='max-w-4xl mx-auto px-4'>
                     <section className='pt-5 sm:pt-13'>
-                        <h2 className='title-icon'>
-                            <span className='plus-signal'>+</span>
-                            <div className='title-icon__box'>
-                                Contáctame.
-                                <span className='split'></span>
-                            </div>
-                        </h2>
+                        <Breadcrumb />
+                        <Title title='Contáctame.' />
                         <div className='pt-5'>
-                            <p>Puedes ponerte en contacto conmigo por cualquiera de estos medios.</p>
+                            <p>Si te interesa mi trabajo o las habilidades que tengo, puedes ponerte en contacto conmigo por cualquiera de estos medios.</p>
                         </div>
                     </section>
                     <section className='grid grid-cols-1 sm:grid-cols-2 gap-5 pt-6'>
