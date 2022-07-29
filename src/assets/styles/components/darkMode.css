@@ -1,7 +1,8 @@
 .dark body {
-    background-color: var(--darkMode-body-color)
+    background-color: var(--darkMode-body-color);
+    color: var(--darkMode-text-color)
 }
-.dark body {
+.dark .btn.btn-primary {
     color: var(--darkMode-text-color)
 }
 .dark :is(h1,h2,h3),

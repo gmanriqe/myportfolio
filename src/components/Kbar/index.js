@@ -74,7 +74,7 @@ const ResultItem = React.forwardRef(
                 ref={ref}
                 className={clsx(
                     'px-4 py-2 flex font-medium items-center justify-between cursor-pointer rounded transition-all duration-75 ease-in-out', {
-                    'bg-gradient-to-tr from-rose-100 to-orange-100': active
+                    'bg-gradient-to-tr from-gray-100 to-gray-300': active
                 }
                 )}
             >

@@ -1,6 +1,6 @@
-const SkillsCard = ({elem, elemIdx}) => {
+const SkillsCard = ({elem, elemKey}) => { 
     return (
-        <div className='card-skills' key={elemIdx}>
+        <div className='card-skills' key={elemKey}>
             <div className='card-skills__header'>
                 <h6>{elem.title}</h6>
             </div>

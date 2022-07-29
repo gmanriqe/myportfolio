@@ -9,7 +9,7 @@ export const Skills = [
     },
     {
         title: 'REACTJS',
-        content: 'Librería muy potente para el manejo del DOM.'
+        content: 'Librería muy potente y utilizada para construir interfaces de usuario (UI) complejas e interactivas. SPA (Single Page Application o aplicación de una sola página).'
     },
     {
         title: 'PRE PROCESADORES',

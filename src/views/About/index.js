@@ -14,7 +14,7 @@ import SkillsCard from "./components/Skills";
 
 const About = () => {
     const location = useLocation();
-    console.log(createModal)
+
     useEffect(() => {
         document.title = 'Sobre mi | GManriqe';
     });
@@ -52,18 +52,18 @@ const About = () => {
                         <Title title='Sobre mí.' />
                         <div className='typing-free col-span-10 lg:col-span-7 pt-5 lg:pt-0'>
                             <p><strong>Hola, ¿Como te vá? 👋 </strong></p>
-                            <p>Soy Jesús Gonzales, bachiller en Ingeniería Informática y Frontend Developer con experiencia haciendo sitios web modernos que sean amigables e intuitivos desarrolladas con HTML5, CSS3, JAVASCRIPT(ES6), y REACTJS. Enfocado en los detalles visuales, con gran destreza en CSS y familiarizado con diferentes frameworks como: Bootstrap y Tailwind.</p>
-                            <p>En el lado Backend cuento con conocimientos en NODEJS(EXPRESS), manejo de base de datos con SQL Server y controlando el versionamiento de código a través de Git con Github o Bitbacket.</p>
-                            <p>Integrante del team Devmaster Perú, ganadores del 1er puesto en la categoría <strong title='FOTOGRAFÍA EVENTO' onClick={() => handleModal()}><u>Innovación en la Hackatrix 2018</u></strong> con la idea "te lo compro - la forma más fácil de pagar tus deudas", organizado por el Banco de Crédito del Perú (BCP) y Belatrixsf.</p>
+                            <p>Soy Jesús Gonzales, Frontend Developer con bachiller en Ingeniería Informática.</p>
+                            <p>Me gusta construir sitios webs y aplicaciones modernas que sean amigables e intuitivas para el usuario, desarrolladas con HTML5, CSS3, JAVASCRIPT(ES6), y REACTJS. Enfocado en los detalles visuales, con gran destreza en CSS y familiarizado con diferentes frameworks como Bootstrap y Tailwind.</p>
+                            <p>En el lado Backend cuento con conocimientos en NODEJS(EXPRESS), manejo de base de datos con SQL Server y controlando el versionamiento de código a través de Git con Github.</p>
+                            <p>Apasionado por el aprendizaje constante y evolutivo, ya sea profundizando en competencias ya adquiridas o ampliando conocimientos en nuevas tecnologías y siempre dispuesto a afrantar nuevos retos.</p>
                             <p>Docente del curso <a href='https://github.com/devmasterperu/DesarrolloWeb-Grupo11' target='_blank' title='REPOSITORIO' rel="noreferrer"><strong><u>Desarrollo Web Frontend</u></strong></a> en Devmaster.</p>
-                            <p><strong>“Con sacrificio, perseverancia y un poco de terquedad, se logran grandes cosas”.</strong></p>
                         </div>
                     </section>
                     <section className='pt-8 sm:pt-13'>
                         <Title title='Habilidades.' />
                         <div className='grid grid-cols-1 sm:grid-cols-3 gap-4 pt-5 sm:pt-10'>
                             {Skills.map((item, idx) => (
-                                <SkillsCard elem={item} elemIdx={idx}/>
+                                <SkillsCard elem={item} elemKey={idx}/>
                             ))}
                         </div>
                     </section>
