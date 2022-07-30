@@ -274,6 +274,8 @@ p strong {
   color: var(--icon-plus);
   font-family: var(--button-font-family);
   font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
 .card-experience h6 em {
   color: var(--white-color);
@@ -286,6 +288,12 @@ p strong {
 .card-experience span {
   display: block;
   margin-top: 16px;
+}
+@media screen and (min-width: 640px) {
+    .card-experience h6 {
+        font-size: 13px;
+        line-height: 1.5rem;
+    }
 }
 
 /* Typing Free */
@@ -454,4 +462,11 @@ display: flex;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .15s;
+}
+/* Card Portfolio */
+.card-portfolio figcaption {
+    line-height: 18px;
+}
+.card-portfolio small {
+    line-height: 16px;
 }
