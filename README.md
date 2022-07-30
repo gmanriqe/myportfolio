@@ -4,9 +4,12 @@ Designed & Built by Jesús Gonzales.
 
 ## Topics used
 
-- Router
+- React V18
+- Bundle
+- React Router v6
 - Hooks
 - Context y Provider
 - Props
 - Mock data
 - Styles width Tailwind
+- Deployment in Vercel
