@@ -16,3 +16,13 @@
 .dark .contact-me.bg-gray-50 {
     background-color: var(--darkMode-card-1-color)
 }
+.dark [title=GITHUB].contact-me.bg-gray-50 i {
+    color: var(--white-color);
+}
+.dark .typing-free ul li::before {
+    background-color: var(--white-color)
+}
+.dark .kbar__animator,
+.dark .kbar__animator input {
+    background-color: var(--darkMode-card-1-color)
+}

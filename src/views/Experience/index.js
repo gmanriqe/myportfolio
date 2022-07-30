@@ -8,7 +8,7 @@ import { Experience as experience } from '../../mock/Experience';
 import { Header } from '../../components/Header';
 import { Footer } from "../../components/Footer";
 import Title from "../../components/Title";
-
+import ExperienceCard from './components/ExperienceCard';
 const Experience = () => {
     const location = useLocation();
 
@@ -26,12 +26,8 @@ const Experience = () => {
                         <Breadcrumb linkMenu={location} linkName='EXPERIENCIA'/>
                         <Title title='Experiencia.' />
                         <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 pt-5 sm:pt-10'>
-                            {experience.map((item, idx) => (
-                                <div className='card-experience' key={idx}>
-                                    <h6>{item.business} <em>{(item.business_type.length > 0) ? `- ${item.business_type}` : ''}</em></h6>
-                                    <p>{item.duration}</p>
-                                    <span>{item.profile}</span>
-                                </div>
+                            {experience.map((item) => (
+                                <ExperienceCard key={item.id} elem={item}/>
                             ))}
                         </div>
                     </section>

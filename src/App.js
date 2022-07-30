@@ -1,7 +1,8 @@
 // 1ero: Paquetes de terceros
 import RoutesComponent from './routes/index';
-import { useNavigate } from "react-router-dom"
-import { KBarProvider } from "kbar";
+import { useNavigate } from 'react-router-dom';
+import { KBarProvider } from 'kbar';
+import { ThemeProvider} from './/context/ThemeContext';
 const App = () => {
     const navegation = useNavigate()
     
@@ -59,9 +60,11 @@ const App = () => {
 
     return (
         <div className='App'>
-            <KBarProvider actions={actions}>
-                <RoutesComponent />
-            </KBarProvider>
+            <ThemeProvider>
+                <KBarProvider actions={actions}>
+                    <RoutesComponent />
+                </KBarProvider>
+            </ThemeProvider>
         </div>
     )
 }

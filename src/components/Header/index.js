@@ -1,6 +1,6 @@
 // 1ero: Paquetes de terceros
 import { Link } from "react-router-dom";
-import ButtonCircle from "../ButtonCircle";
+import { ButtonMenu, ButtonDarkMode } from "../ButtonCircle";
 
 export const Header = ({ pathname }) => {
     const path = pathname
@@ -17,7 +17,7 @@ export const Header = ({ pathname }) => {
                             (path.pathname === '/')
                                 ? <div className='flex items-center'>
                                     <Link to='/contactame' className='btn btn-small btn-primary'>CONTÁCTAME</Link>
-                                    <ButtonCircle/>
+                                    <ButtonDarkMode />
                                 </div>
                                 : <div className='flex items-center'>
                                     <ul className='flex items-center gap-2'>
@@ -28,9 +28,9 @@ export const Header = ({ pathname }) => {
                                             <a href='https://github.com/gmanriqe/' target='_blank' title='GITHUB' rel="noreferrer"><i className='icon-github text-xl'></i></a>
                                         </li>
                                     </ul>
-                                    <ButtonCircle />
+                                    <ButtonDarkMode />
+                                    <ButtonMenu />
                                 </div>
-
                         }
                     </div>
                 </div>
