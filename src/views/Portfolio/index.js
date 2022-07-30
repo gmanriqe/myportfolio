@@ -8,6 +8,7 @@ import { Footer } from '../../components/Footer';
 import { Portfolio as portfolio } from '../../mock/Portfolio';
 import KBarMenu from "../../components/Kbar";
 import Title from '../../components/Title';
+import ProjectCard from './components/ProjectCard';
 
 const Portfolio = () => {
     const location = useLocation();
@@ -27,13 +28,8 @@ const Portfolio = () => {
                         <Title title='Portafolio.' />
                         <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 pt-5 sm:pt-10'>
                             {
-                                portfolio.map((item, idx) => (
-                                    <a key={idx} href={item.link} target='_blank' title={item.title} rel="noreferrer">
-                                        <figure>
-                                            <img src={item.image_URL} alt={item.description}></img>
-                                            <figcaption><small>{item.marca}</small></figcaption>
-                                        </figure>
-                                    </a>
+                                portfolio.map((item) => (
+                                    <ProjectCard key={item.id} elem={item}/>
                                 ))
                             }
                         </div>

@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-const ThemeInitial = false
+const ThemeInitial = true
 
 // Creacion de context
 export const ThemeContext = createContext(ThemeInitial);
