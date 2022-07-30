@@ -33,5 +33,33 @@ export const Portfolio = [
         image_URL: require('../assets/images/portfolio/otto_kunz.png'),
         marca: 'Otto Kunz',
         technologies: 'HTML5, CSS3, JAVASCRIPT (JQuery) Y GULP'
+    },
+    {
+        id: 6,
+        link: 'https://fortierprice.com/',
+        image_URL: require('../assets/images/portfolio/fortier_price.png'),
+        marca: 'Fortier Price',
+        technologies: 'HTML5, CSS3, JAVASCRIPT (JQuery) Y GULP'
+    },
+    {
+        id: 7,
+        link: 'https://ameracorporation.com/caribbean/',
+        image_URL: require('../assets/images/portfolio/amera.png'),
+        marca: 'Amera Corporation',
+        technologies: 'HTML5, CSS3, JAVASCRIPT (JQuery) Y WORDPRESS'
+    },
+    {
+        id: 8,
+        link: 'https://gmanriqe.github.io/siteweb-clean/',
+        image_URL: require('../assets/images/portfolio/clean.png'),
+        marca: 'Clean',
+        technologies: 'HTML5, CSS3, JAVASCRIPT'
+    },
+    {
+        id: 9,
+        link: 'https://gmanriqe.github.io/siteweb-navigator/',
+        image_URL: require('../assets/images/portfolio/navigator.png'),
+        marca: 'Navigator',
+        technologies: 'HTML5, CSS3 (Bootstrap), JAVASCRIPT'
     }
 ]
