@@ -25,7 +25,8 @@ const Contact = () => {
                         <Breadcrumb linkMenu={location} linkName='CONTÁCTAME'/>
                         <Title title='Contáctame.' />
                         <div className='max-w-xl pt-5'>
-                            <p>Si te interesa mi trabajo o las habilidades que tengo, puedes ponerte en contacto conmigo por cualquiera de estos medios.</p>
+                            <p>Si te interesa mi trabajo o las habilidades que tengo, te dejo unos botones útiles para que puedes ponerte en contacto conmigo inmediatamente.
+                            </p>
                         </div>
                     </section>
                     <section className='grid grid-cols-1 sm:grid-cols-2 gap-5 pt-6'>
@@ -59,7 +60,7 @@ const Contact = () => {
                             </div>
                             <div className='text-base grow'>
                                 <p className='text-lg leading-6 font-medium text-gray-900'>Twitter</p>
-                                <p className='relative'>Escríbeme @ .. <i className='icon-long-arrow-right ml-2 absolute'></i></p>
+                                <p className='relative'>Enviame un DM .. <i className='icon-long-arrow-right ml-2 absolute'></i></p>
                             </div>
                         </a>
                         <a href='mailto:gmanriqe@gmail.com' target='_blank' title='EMAIL' rel="noreferrer" className='flex p-6 bg-gray-50 contact-me'>

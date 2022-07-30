@@ -25,7 +25,7 @@ const Blog = () => {
                     <Breadcrumb linkMenu={location} linkName='BLOG'/>
                         <Title title='Blog.' />
                         <div className='pt-5'>
-                            <p>Sin resultado...</p>
+                            <p>Te prometo que muy pronto encontrarás mi primer post ..</p>
                         </div>
                     </section>
                 </div>
