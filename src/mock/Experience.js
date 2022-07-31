@@ -24,7 +24,7 @@ export const Experience = [
         id: 4,
         business: 'CULTURA INTERACTIVA',
         business_type: '',
-        duration: 'OCT2018 - MAR2018',
+        duration: 'AGO2018 - FEB2019',
         profile: 'Frontend JR'
     },
     {
