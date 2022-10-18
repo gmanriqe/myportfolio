@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import KBarMenu from "../../components/Kbar";
-// 2do: Paquetes de mi propio proyecto
+// 2do: Paquetes propios
 import { Header } from "../../components/Header";
 
 const Home = () => {

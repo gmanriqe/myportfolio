@@ -2,7 +2,9 @@
 import RoutesComponent from './routes/index';
 import { useNavigate } from 'react-router-dom';
 import { KBarProvider } from 'kbar';
-import { ThemeProvider} from './/context/ThemeContext';
+// 2do: Paquetes propios
+import { ThemeProvider} from './context/ThemeContext';
+
 const App = () => {
     const navegation = useNavigate()
     
@@ -57,7 +59,7 @@ const App = () => {
             section: 'Navegación',
         }
     ]
-
+    
     return (
         <div className='App'>
             <ThemeProvider>

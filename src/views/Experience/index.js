@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import KBarMenu from "../../components/Kbar";
 import Breadcrumb from '../../components/Breadcrumb';
-// 2do: Paquetes de mi propio proyecto
+// 2do: Paquetes propios
 import { Experience as experience } from '../../mock/Experience';
 import { Header } from '../../components/Header';
 import { Footer } from "../../components/Footer";

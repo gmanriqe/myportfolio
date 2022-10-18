@@ -1,6 +1,5 @@
 // 1ero: Paquetes de terceros
 import { Route, Routes } from 'react-router-dom';
-
 // 2do: Paquetes de mi propio proyecto
 import Home from '../views/Home';
 import About from '../views/About';
@@ -10,7 +9,7 @@ import Blog from '../views/Blog';
 import Contact from '../views/Contact';
 import Page404 from '../views/Page404';
 
-// recuerda este componente no tiene llaves, directo con parentesis
+// Este componente no tiene llaves, directo con parentesis
 const RoutesComponent = () => (
     <Routes>
         <Route path="/" element={<Home />} />

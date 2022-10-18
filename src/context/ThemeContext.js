@@ -1,16 +1,15 @@
+// 1ero: Paquetes de terceros
 import { createContext, useState } from "react";
 
 const ThemeInitial = true
-
-// Creacion de context
+// Creando el contexto (1)
 export const ThemeContext = createContext(ThemeInitial);
-
-// Creacion de provider
+// Creando el provider (2)
 export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState(ThemeInitial);
 
     return (
-        // llamado al contexto y sus valores
+        // Llamado al contexto y sus valores
         <ThemeContext.Provider value={[theme, setTheme]}>
             {children}
         </ThemeContext.Provider>
